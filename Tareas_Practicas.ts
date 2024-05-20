@@ -18,4 +18,4 @@ let mensaje: string;
 mensaje= "Hola Mundo";
 console.log(mensaje);*/ 
 
-/*Tareas nuevas*/
+// /*Tareas nuevas*/ dato: ctrl + k + c = comentarios
