@@ -11,7 +11,7 @@ import * as rls from "readline-sync";
 // Función para calcular la potencia de un número
 function calcularPotencia(base: number, exponente: number): number {
     let resultado: number = 1;
-    for (let i: number = 0; i < exponente; i++) {
+    for (let i = 0; i < exponente; i++) {
         resultado *= base;
     }
     return resultado;
@@ -22,14 +22,17 @@ function main(): void {
     let base: number = rls.questionInt("Ingrese el número base: ");
     let exponente: number = rls.questionInt("Ingrese el número exponente: ");
     
+    // Validar que el exponente sea mayor o igual a 0
     while (exponente < 0) {
         console.log("Debe ingresar un número exponente mayor o igual a 0.");
         exponente = rls.questionInt("Ingrese el número exponente: ");
     }
     
+    // Calcular la potencia una vez se tiene un exponente válido
     let potencia: number = calcularPotencia(base, exponente);
     console.log(`${base} a la ${exponente} potencia es: ${potencia}`);
 }
 
 // Ejecutar la función principal
 main();
+
