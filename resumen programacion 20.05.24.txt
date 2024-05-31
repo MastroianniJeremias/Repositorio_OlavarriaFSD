@@ -1,0 +1,204 @@
+// console.log() imprime en pantalla (lo muestra)
+
+// EJEMPLOS
+
+// console.log("Hola Mundo");
+// Lo que se muestra en la consola: Hola Mundo
+// console.log("2+8");
+// Lo que se muestra en la consola: 2+8
+// console.log(2+8);
+// Lo que se muestra en la consola:10
+
+// let nombreVariable: number = 0 (let declara una variable, : para declarar el tipo, = para darle un valor)
+
+// TIPOS DE VARIABLES (lo que usamos hasta ahora)
+// number (numeros)
+// string ("texto") 
+// boolean (verdadero o falso)
+
+//COMANDOS: npm istall -g readline-sync
+// import * as rls from "readline-sync"; (PARA PREGUNTARLE AL USUARIO) es una biblioteca.
+// rls puede ser cualquier nombre que quieras, solo sirve para llamar a la biblioteca.
+// .question-el usuario puede ingresar cualquier numero, palabra, simbolo.
+// .questionInt-el usuario solo puede ingresar numeros enteros.
+// .questionFloat-el usuario puede ingresar numeros decimales.
+
+//EJEMPLO
+
+// let variable: number = rls.questionInt("ingrese un numero: ")
+// let nombres: string = rls.question("ingrese un nombre: ")
+
+//SELECCION
+
+//para pocos casos: if (si) else (sino)
+
+	// if(condicion) {
+	// console.log()
+	// } else {
+	// instrucciones;
+	// }
+
+//tambien puede ser:
+
+	// if(condicion){
+	// instrucciones;
+	// } else if (condicion) {
+	// instrucciones;
+	// } else {
+	// instrucciones;
+	// }
+//EJEMPLO
+
+import * as rls from 'readline-sync';
+
+let mayoriaEdad: number = 18;
+let edadUsuario: number = rls.questionInt('ingrese su edad: ');
+
+    if(edadUsuario >= mayoriaEdad) {
+        console.log("Sos mayor de edad");
+    } else {
+        console.log("Sos menor de edad");
+    }
+
+let horario: number = rls.questionInt('ingrese la hora: ');
+let mediodia: number = 12
+
+    if(horario <= mediodia) {
+        console.log('Buen dia');
+    } else if(horario > 19) {
+        console.log('Buenas noches');
+    } else {
+        console.log('Buenas tardes');
+    }
+
+//pero para muchos casos: switch
+
+let puestosDeLaCarrera: string = rls.question('ingrese el puesto: ');
+let primerPuesto: string = 'primero';
+let segundoPuesto: string = 'segundo';
+let tercerPuesto: string = 'tercero';
+
+	switch (puestosDeLaCarrera) {
+		case primerPuesto:
+		console.log("medalla de oro");
+        break;
+		case segundoPuesto:
+		console.log("medalla de plata");
+        break;
+        case tercerPuesto: 
+		console.log("medalla de bronce");
+        break;
+		default:
+		console.log("siga participando perra");
+        break;
+    }
+
+// el BREAK hace que salga del switch
+// DEFAULT es para casos por defecto
+
+//CICLOS
+
+//WHILE-mientras
+
+// while (condicion) {
+// 	instrucciones;
+// 	}
+
+//EJEMPLO
+
+    let numero: number = 0
+    let numeroPar: number = 0;
+    let numeroImpar: number = 0;
+    
+        while (numero < 10) {
+            if(numero % 2 === 0) {  
+                numeroPar++
+            } else {
+                numeroImpar++
+            }
+            numero++
+            }
+    
+    console.log('hay ' + numeroPar + ' numeros pares');
+    console.log(`hay ${numeroPar} numeros pares`);
+    console.log('hay ' + numeroImpar + ' numeros impares');
+
+//FOR-para(inicio; condicion; cada cuanto se incrementa o decrementa);
+
+    //for(variable=inicio; variable <= final; variable++) {
+	//instruciones;
+	//}
+
+//EJEMPLO
+let i: number;
+    for(let i = 0; i < 10; i++) {
+        if(i % 2 === 0) {  
+            numeroPar++
+        } else {
+            numeroImpar++
+	    }
+    }
+
+//ACLARACION: dentro del WHILE, FOR puede haber otro: por ejemplo dentro de un FOR un IF-ELSE IF-ELSE.
+
+//INCREMENTO:
+//++ (suma de a 1) ++2 (suma de a 2) lo mismo con --(resta).
+
+//FUNCIONES
+
+    //todas las variables declaradas dentro de una funcion solo pertenecen a esa funcion (exceptuando arreglos y matrices) = LOCALES
+
+    //function nombreFuncion (parametro1: tipo, parametro2: tipo) tipo {
+        //instrucciones;
+        //return variableADevolver
+    //}
+
+    //los PARAMETROS son declaraciones fuera de la funcion (GLOBALES) que vamos a darle para que lo utilice dentro
+
+// EJEMPLO
+    //Armar la lista de numeros.
+
+    import * as rls from 'readline-sync';
+
+    let sizeArrays: number = rls.questionInt('Ingrese la cantidad de numeros de la lista: '); //GLOBAL
+    let listaDeNumeros: number[] = new Array(sizeArrays) //GLOBAL
+
+    function armarLista(listaDeNumeros: number[]) {
+        for (let i = 0; i < sizeArrays; i++) {
+            listaDeNumeros[i] = rls.questionFloat(`Ingrese un numero en la posicion ${i}: `); //LOCAL
+        }
+        console.log('La lista es: ' + listaDeNumeros);
+        return listaDeNumeros; // lo devolvemos con return para sacarlo de la funcion y utilizarlo en otra ocacion, si no hacemos esto no nos da nada para usar fuera de la funcion
+    }
+
+    let lista: number[] = armarLista(listaDeNumeros); //aca se declara una variable que contenga la funcion para luego devolverla mas facilmente
+    console.log(lista); //si no tendriamos la variable lista quedaria: console.log(armarLista(listaDeNumeros));
+
+//ACLARACION
+    //se puede llamar a una funcion dentro de otra funcion
+    //para llamarla simplemente escribimos nombreFuncion(parametros) y listo; si la funcion no tiene ningun parametro los parentesis quedan vacios ()
+
+//ARRAYS (ARREGLOS)
+
+//DECLARACION:
+    //let nombreArray: tipo[] = new Array(cantidadDeElementos); || let nombreArray: tipo[] = [3,6,8,9,3]; (ESTE SOLO CUANDO CONOCEMOS LOS VALORES DEL ARRAY)
+
+    import * as rls from 'readline-sync';
+
+    //le pido al usuario que ingrese el numero del mes
+    let numeroMes: number = rls.questionInt("Ingrese el numero del mes: ");
+
+     //arrayMeses esta declarado de esta forma porque ya conozco los valores
+    let arrayMeses: string[] = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+    //declaro el indice como numeroMes (ingresado por el usuario) y le resto 1 porque el indice siempre comienza a contar desde el 0
+    let indice: number = numeroMes - 1;
+    
+    //si el usuario pone un numero mayor a 12 le pide ingresar un numero correcto
+    
+        if (indice < 12) {
+            console.log("El mes es", arrayMeses[indice]);
+        } else {
+            console.log ("Debe ingresar un mes valido");
+            numeroMes = rls.questionInt("Ingrese el numero del mes: ");
+        }

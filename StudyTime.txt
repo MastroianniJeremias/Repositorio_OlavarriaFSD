@@ -1,0 +1,207 @@
+
+Prácticas
+
+1. Escribe una función que tome dos números como parámetros y devuelva la suma de ambos.
+
+```typescript
+function sumar(a: number, b: number): number {
+    return a + b;
+}
+
+// Ejemplo de uso:
+console.log(sumar(3, 4)); // 7
+```
+
+2. Crea una función que tome un arreglo de números como parámetro y devuelva el promedio de los elementos.
+
+```typescript
+function promedio(arr: number[]): number {
+    let suma = 0;
+    for (let i = 0; i < arr.length; i++) {
+        suma += arr[i];
+    }
+    return suma / arr.length;
+}
+
+// Ejemplo de uso:
+console.log(promedio([1, 2, 3, 4, 5])); // 3
+```
+
+3. Implementa una función que tome un arreglo de números como parámetro y devuelva el número más grande.
+
+```typescript
+function numeroMayor(arr: number[]): number {
+    let mayor = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > mayor) {
+            mayor = arr[i];
+        }
+    }
+    return mayor;
+}
+
+// Ejemplo de uso:
+console.log(numeroMayor([1, 2, 3, 4, 5])); // 5
+```
+
+4. Escribe una función que tome dos arreglos como parámetros y devuelva un nuevo arreglo que contenga los elementos de ambos arreglos concatenados.
+
+```typescript
+function concatenarArreglos(arr1: number[], arr2: number[]): number[] {
+    return arr1.concat(arr2);
+}
+
+// Ejemplo de uso:
+console.log(concatenarArreglos([1, 2, 3], [4, 5, 6])); // [1, 2, 3, 4, 5, 6]
+```
+
+5. Implementa una función que tome un arreglo de números como parámetro y devuelva el resultado de multiplicar todos los elementos.
+
+```typescript
+function multiplicarElementos(arr: number[]): number {
+    let producto = 1;
+    for (let i = 0; i < arr.length; i++) {
+        producto *= arr[i];
+    }
+    return producto;
+}
+
+// Ejemplo de uso:
+console.log(multiplicarElementos([1, 2, 3, 4])); // 24
+```
+
+6. Escribe una función que tome un número como parámetro y devuelva true si es primo, o false si no lo es.
+
+```typescript
+function esPrimo(num: number): boolean {
+    if (num <= 1) return false;
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+// Ejemplo de uso:
+console.log(esPrimo(7)); // true
+console.log(esPrimo(4)); // false
+```
+
+7. Crea una función que tome un elemento y un arreglo como parámetros, y devuelva la cantidad de veces que el elemento aparece en el arreglo.
+
+```typescript
+function contarElemento<T>(elemento: T, arr: T[]): number {
+    let contador = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === elemento) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+// Ejemplo de uso:
+console.log(contarElemento(2, [1, 2, 2, 3, 4, 2])); // 3
+```
+
+8. **Implementa una función que tome dos números como parámetros y devuelva el número más pequeño.**
+
+```typescript
+function numeroMenor(a: number, b: number): number {
+    return a < b ? a : b;
+}
+
+// Ejemplo de uso:
+console.log(numeroMenor(3, 4)); // 3
+```
+
+9. Escribe una función que tome un arreglo de números como parámetro y lo ordene de forma descendente.
+
+```typescript
+function ordenarDescendente(arr: number[]): number[] {
+    return arr.sort((a, b) => b - a);
+}
+
+// Ejemplo de uso:
+console.log(ordenarDescendente([1, 4, 3, 2, 5])); // [5, 4, 3, 2, 1]
+```
+
+Teóricas
+
+1. ¿Qué es la programación y por qué es importante?
+
+La programación es el proceso de diseñar y construir un conjunto de instrucciones que le dicen a una computadora cómo realizar una tarea. Es importante porque permite automatizar tareas, resolver problemas complejos, desarrollar aplicaciones y sistemas que facilitan la vida cotidiana y potencian la productividad en diversas áreas como la ciencia, la economía, la medicina, entre otras.
+
+2. Explica qué es un algoritmo y por qué es útil en programación.
+
+Un algoritmo es una secuencia finita de instrucciones o pasos que resuelven un problema o realizan una tarea específica. Son útiles en programación porque proporcionan una guía clara sobre cómo lograr un resultado deseado, lo que facilita la planificación, la codificación y la solución de problemas.
+
+3. ¿Qué es una variable y cómo se utiliza en programación?
+
+Una variable es un espacio de almacenamiento en la memoria de la computadora que puede contener un dato que puede cambiar durante la ejecución del programa. Se utiliza para almacenar y manipular información. En TypeScript, se declara y se le asigna un tipo, y luego se puede utilizar en diversas operaciones.
+
+```typescript
+let edad: number = 25; // declaración e inicialización de una variable
+edad = 26; // cambio del valor de la variable
+```
+
+4. ¿Cuál es la diferencia entre una función y un método?
+
+Una función es un bloque de código independiente que realiza una tarea específica y puede ser llamado en cualquier parte del programa. Un método es una función asociada a un objeto o clase en programación orientada a objetos, y puede operar sobre los datos contenidos en ese objeto.
+
+```typescript
+// Función
+function saludar(): void {
+    console.log("Hola");
+}
+
+// Método (en un objeto)
+const persona = {
+    nombre: "Juan",
+    saludar: function(): void {
+        console.log("Hola, " + this.nombre);
+    }
+};
+```
+
+5. Describe qué es un bucle y proporciona un ejemplo de uso.
+
+Un bucle (o ciclo) es una estructura de control que permite repetir un bloque de código múltiples veces mientras una condición sea verdadera. Son útiles para iterar sobre colecciones de datos o realizar operaciones repetitivas.
+
+```typescript
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+// Salida: 0 1 2 3 4
+```
+
+6. ¿Qué son los condicionales y cómo se utilizan en programación?
+
+Los condicionales son estructuras de control que permiten ejecutar bloques de código diferentes en función de si una condición es verdadera o falsa. Se utilizan para tomar decisiones en el flujo del programa.
+
+```typescript
+let edad: number = 20;
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+} else {
+    console.log("Eres menor de edad");
+}
+```
+
+7. Explica qué son los arreglos y cómo se manejan en programación.
+
+Los arreglos (o arrays) son estructuras de datos que permiten almacenar múltiples valores en una sola variable, y se accede a cada valor por su índice. Son útiles para manejar listas de elementos de manera ordenada y eficiente.
+
+```typescript
+let numeros: number[] = [1, 2, 3, 4, 5];
+console.log(numeros[0]); // 1
+numeros.push(6); // Agregar un elemento al final
+```
+
+8. ¿Cuál es la diferencia entre una cadena de texto y un número en programación?
+
+Una cadena de texto (string) es una secuencia de caracteres, mientras que un número (number) representa valores numéricos que pueden ser enteros o decimales. Las cadenas se utilizan para almacenar y manipular texto, y los números para realizar cálculos matemáticos.
+
+```typescript
+let cadena: string = "Hola";
+let numero: number = 123;
+```
