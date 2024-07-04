@@ -1,0 +1,74 @@
+/* <!-- Realicen una página:
+•Elementos anidados.
+•Utilizar selectores anidados para dar estilos.
+•Probar colisiones y ver qué estilo se impone. (Esto les dije que es mas para ellos no tienen que mostrar nada en particular en el ejercicio)
+Diseñe un link que debe:
+•Cambiar levemente su color al pasar por arriba con el cursor
+•Cambiar de color al ser visitado. --> */
+
+body {
+    background-color: #f2f2f2;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-principal {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-secundario {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-terciario {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-cuarto {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-quinto {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-sexto {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
