@@ -1,0 +1,97 @@
+/* Estilo global para asegurar que el box-sizing se aplique a todos los elementos */
+* {
+    box-sizing: border-box;
+    
+}
+
+/* Estilo del cuerpo de la página para centrar el contenedor principal */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #f0f0f0, #aca6a6);
+}
+
+/* Estilo para el contenedor */
+/* Contenedor principal que utiliza Flexbox para organizar los elementos */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para el bloque verde */
+.Verde-izq {
+    background-color: green;
+    width: 86px; /* Ancho del bloque verde */
+    height: 50px; /* Altura del bloque verde */
+    margin-right: 5px;
+}
+
+/* Estilo para el bloque gris */
+.Gris-der {
+    background-color: gray;
+    width: 197px; /* Ancho del bloque gris */
+    height: 50px; /* Altura del bloque gris */
+}
+
+/* Estilo para el bloque beige */
+.beige-izq {
+    background-color: beige;
+    width: 288px; /* Ancho del bloque beige */
+    height: 30px; /* Altura del bloque beige */
+    margin: 5px 0px ;
+    border-style: solid;
+}
+
+/* Estilo para el bloque púrpura a la izquierda */
+.left-purple {
+    background-color: purple;
+    width: 88px; /* Ancho del bloque púrpura */
+    height: 200px; /* Altura del bloque púrpura */
+    margin-right: 5px;
+}
+
+/* Estilo para el bloque azul en la parte superior derecha */
+.top-right-blue {
+    background-color: blue;
+    width: 95px; /* Ancho del bloque azul */
+    height: 100px; /* Altura del bloque azul */
+    margin-right: 5px;
+}
+
+/* Estilo para el bloque rosa en la parte superior derecha */
+.top-right-pink {
+    background-color: rgb(219, 88, 208);
+    width: 95px; /* Ancho del bloque rosa */
+    height: 100px; /* Altura del bloque rosa */
+}
+
+/* Estilo para el bloque naranja en la parte inferior derecha */
+.bottom-right-orange {
+    background-color: orange;
+    width: 195px; /* Ancho del bloque naranja */
+    height: 95px; /* Altura del bloque naranja */
+    margin-top: 5px;
+}
+
+/* Estilo para el bloque aqua en la parte inferior */
+.bottom-aqua {
+    background-color: aqua;
+    margin-top: 5px;
+    width: 288px; /* Ancho del bloque aqua */
+    height: 50px; /* Altura del bloque aqua */
+    border-style: dashed;
+}
+
+
+
+.cajas0, .cajas1, .cajas3 {
+    display: flex;
+}
+
+.cajas2 {
+    display: flex;
+    flex-direction: column-reverse;
+}

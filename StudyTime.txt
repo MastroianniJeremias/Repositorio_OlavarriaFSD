@@ -205,3 +205,4 @@ Una cadena de texto (string) es una secuencia de caracteres, mientras que un nú
 let cadena: string = "Hola";
 let numero: number = 123;
 ```
+
