@@ -72,3 +72,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+a:hover {
+    color: rgb(160, 160, 0);
+}
+
+a:visited {
+    color: green;
+}
+
+a:visited:hover {
+    color: orangered;
+}
