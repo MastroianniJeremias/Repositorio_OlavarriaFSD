@@ -14,201 +14,261 @@
 
     <!-- Logo  -->
     <link rel="icon" href="Img/logo.ico">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <!--Fin del Logo  -->
 
     <!-- Google Fonts link -->
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Fin de Google Fonts link -->
 
 </head>
-<body id="completo">
-
-    <!-- cabezal -->
-    <div id="cabezal">
-
-    <!-- logo principal -->
-    <div class="title" id="logo">
-        <img src="Img/logo_grande.jpg" alt="Logo Fénix Supermercado">
+<body>
+    <div id="encabezado">
+        <!-- Logo principal -->
+        <div class="logo" id="logo-principal">
+            <img src="Img/logo_grande.jpg" alt="Logo Fénix Supermercado" title="Fénix Supermercado">
+        </div>
+        <!-- Fin de logo principal -->
+        <!-- Logo secundario -->
+         <div id="superior-extrema-izquierda">
+            <i class="fi fi-rr-cart-shopping-fast"></i>
+         </div>
+        <!-- Fin de logo secundario -->
     </div>
-    <!-- Fin de logo principal -->
-
-    <!-- Menu de la pagina -->
-    <button class="menu-btn"></button>
-        <div class="backdrop"></div>
-
-        <section></section>
-
+    <div id="alert-compras" class="hidden"></div>
+        <!-- Menú de la página -->
+        <button class="boton-menu"></button>
+        <div class="fondo"></div>
         <div class="menu"></div>
-          <nav>
-            <a href="#Home" class="link" style="animation-delay: 0.2s;" title="Home">Home</a>
-            <a href="#Productos" class="link" style="animation-delay: 0.3s;" title="Productos">Productos</a>
-            <a href="#Nuestras Marcas" class="link" style="animation-delay: 0.4s;" title="Nuestras Marcas">Nuestras Marcas</a>
-            <a href="#Tecnología, Electrónica, más" class="link" style="animation-delay: 0.5s;" title="Tecnología, Electrónica, más">Tecno, Electro y más...</a>
-            <a href="#Sobre Nosotros" class="link" style="animation-delay: 0.6s;" title="Sobre Nosotros">Sobre Nosotros</a>
-          </nav>
-    <!-- Fin del Menu de la pagina -->
+        <nav>
+            <a href="#Home" class="enlace-nav" style="animation-delay: 0.2s;" title="Home">Home</a>
+            <a href="#Productos" class="enlace-nav" style="animation-delay: 0.3s;" title="Productos">Productos</a>
+            <a href="#NuestrasMarcas" class="enlace-nav" style="animation-delay: 0.4s;" title="Nuestras Marcas">Nuestras Marcas</a>
+            <a href="#TecnologiaElectronics" class="enlace-nav" style="animation-delay: 0.5s;" title="Tecnología, Electrónica, más">Tecno, Electro y más...</a>
+            <a href="#SobreNosotros" class="enlace-nav" style="animation-delay: 0.6s;" title="Sobre Nosotros">Sobre Nosotros</a>
+        </nav>
+        <!-- Fin del Menú de la página -->
 
-    <!-- Contenido principal -->
+        <!-- Contenido principal -->
         <header>
-        <!-- contenedor -->
-        <div id="contenedor">
-        <!-- Home section -->
-            <section id="Home">
-                <h2>Home</h2>
-                <p></p>
-            </section>
-        <!-- Fin de Home section -->
+            <!-- Contenedor -->
+            <div id="contenedor-principal">
+                <!-- Home section -->
+                <section id="Home">
+                    <div>
+                        <h2>Home</h2>
+                    </div>
+                </section>
+                <!-- Fin de Home section -->
 
-        <!-- Productos section -->
-        <section id="Productos">
-            <h2>Productos</h2>
-            <div id="caja1 Productos">
-                <div class="cuerpo_productos">
-                    <h3 id="titulo_menor" class="titulos_b">Productos Destacados</h3>
-                    <div id="portada" class="contenedor_b">
-                        <div class="list_b">
-                            <div class="list_item">
-                                <div class="tarjeta_producto">
-                                    <div class="img_tp">
-                                        <img src="" alt="" title="">
-                                    </div>
-                                    <div class="superior_izquierda">
-                                        <span class="icono_si"></span>
-                                    </div>
-                                    <h4 class="titulo_menor_icono"> <!-- aca va el nombre el producto --> </h4>
-                                </div>
+                <!-- Productos section -->
+                <section id="Productos">
+                    <div class="titulo-seccion"><h2>Productos</h2></div>
+                    <div id="caja-productos">
+                        <div class="cuerpo-productos">
+                            <div>
+                            <h3 class="titulo-destacado">Productos Destacados</h3>
                             </div>
-                            <div class="list_item">
-                                <div class="tarjeta_producto">
-                                    <div class="img_tp">
-                                        <img src="" alt="" title="">
+                            <div id="productos-destacados" class="contenedor-productos">
+                                <div class="lista-productos">
+                                    <!-- Repetir este bloque para cada producto -->
+                                    <div class="item-producto">
+                                        <div class="tarjeta-producto">
+                                            <div class="imagen-producto">
+                                                <img src="" alt="" title="">
+                                            </div>
+                                            <div class="icono-superior-izquierda">
+                                                <span class="icono"><img src="" alt="" title=""></span>
+                                            </div>
+                                            <div>
+                                            <h4 class="titulo-producto"> Titulo de producto </h4>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="superior_izquierda">
-                                        <span class="icono_si"></span>
+                                    <!-- Fin de repeitr el bloque de marca según sea necesario -->
+                                    <div class="item-producto">
+                                        <div class="tarjeta-producto">
+                                            <div class="imagen-producto">
+                                                <img src="" alt="" title="">
+                                            </div>
+                                            <div class="icono-superior-izquierda">
+                                                <span class="icono"><img src="" alt="" title=""></span>
+                                            </div>
+                                            <div>
+                                            <h4 class="titulo-producto"> Titulo de producto </h4>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h4 class="titulo_menor_icono"> <!-- aca va el nombre el producto --> </h4>
-                                </div>
-                            </div>
-                            <div class="list_item">
-                                <div class="tarjeta_producto">
-                                    <div class="img_tp">
-                                        <img src="" alt="" title="">
+                                    <div class="item-producto">
+                                        <div class="tarjeta-producto">
+                                            <div class="imagen-producto">
+                                                <img src="" alt="" title="">
+                                            </div>
+                                            <div class="icono-superior-izquierda">
+                                                <span class="icono"><img src="" alt="" title=""></span>
+                                            </div>
+                                            <div>
+                                            <h4 class="titulo-producto"> Titulo de producto </h4>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="superior_izquierda">
-                                        <span class="icono_si"></span>
+                                    <div class="item-producto">
+                                        <div class="tarjeta-producto">
+                                            <div class="imagen-producto">
+                                                <img src="" alt="" title="">
+                                            </div>
+                                            <div class="icono-superior-izquierda">
+                                                <span class="icono"><img src="" alt="" title=""></span>
+                                            </div>
+                                            <div>
+                                            <h4 class="titulo-producto"> Titulo de producto </h4>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h4 class="titulo_menor_icono"> <!-- aca va el nombre el producto --> </h4>
-                                </div>
-                            </div>
-                            <div class="list_item">
-                                <div class="tarjeta_producto">
-                                    <div class="img_tp">
-                                        <img src="" alt="" title="">
+                                    <div class="item-producto">
+                                        <div class="tarjeta-producto">
+                                            <div class="imagen-producto">
+                                                <img src="" alt="" title="">
+                                            </div>
+                                            <div class="icono-superior-izquierda">
+                                                <span class="icono"><img src="" alt="" title=""></span>
+                                            </div>
+                                            <div>
+                                            <h4 class="titulo-producto"> Titulo de producto </h4>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="superior_izquierda">
-                                        <span class="icono_si"></span>
-                                    </div>
-                                    <h4 class="titulo_menor_icono"> <!-- aca va el nombre el producto --> </h4>
-                                </div>
-                            </div>
-                            <div class="list_item">
-                                <div class="tarjeta_producto">
-                                    <div class="img_tp">
-                                        <img src="" alt="" title="">
-                                    </div>
-                                    <div class="superior_izquierda">
-                                        <span class="icono_si"></span>
-                                    </div>
-                                    <h4 class="titulo_menor_icono"> <!-- aca va el nombre el producto --> </h4>
-                                </div>
-                            </div>
-                            <div class="list_item">
-                                <div class="tarjeta_producto">
-                                    <div class="img_tp">
-                                        <img src="" alt="" title="">
-                                    </div>
-                                    <div class="superior_izquierda">
-                                        <span class="icono_si"></span>
-                                    </div>
-                                    <h4 class="titulo_menor_icono"> <!-- aca va el nombre el producto --> </h4>
-                                </div>
-                            </div>
-                            <div class="list_item">
-                                <div class="tarjeta_producto">
-                                    <div class="img_tp">
-                                        <img src="" alt="" title="">
-                                    </div>
-                                    <div class="superior_izquierda">
-                                        <span class="icono_si"></span>
-                                    </div>
-                                    <h4 class="titulo_menor_icono"> <!-- aca va el nombre el producto --> </h4>
-                                </div>
-                            </div>
-                            <div class="list_item">
-                                <div class="tarjeta_producto">
-                                    <div class="img_tp">
-                                        <img src="" alt="" title="">
-                                    </div>
-                                    <div class="superior_izquierda">
-                                        <span class="icono_si"></span>
-                                    </div>
-                                    <h4 class="titulo_menor_icono"> <!-- aca va el nombre el producto --> </h4>
-                                </div>
-                            </div>
-                            <div class="list_item">
-                                <div class="tarjeta_producto">
-                                    <div class="img_tp">
-                                        <img src="" alt="" title="">
-                                    </div>
-                                    <div class="superior_izquierda">
-                                        <span class="icono_si"></span>
-                                    </div>
-                                    <h4 class="titulo_menor_icono"> <!-- aca va el nombre el producto --> </h4>
-                                </div>
-                            </div>
-                            <div class="list_item">
-                                <div class="tarjeta_producto">
-                                    <div class="img_tp">
-                                        <img src="" alt="" title="">
-                                    </div>
-                                    <div class="superior_izquierda">
-                                        <span class="icono_si"></span>
-                                    </div>
-                                    <h4 class="titulo_menor_icono"> <!-- aca va el nombre el producto --> </h4>
+                                    <!-- Fin del bloque de producto -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <!-- Fin de Productos section -->
+
+                <!-- Nuestras Marcas section -->
+                <section id="NuestrasMarcas">
+                    <div class="titulo-seccion"><h2>Nuestras Marcas</h2></div>
+                    <div id="caja-marcas">
+                        <div class="cuerpo-productos">
+                            <div class="contenedor-marcas">
+                                <div class="item-marca">
+                                    <div class="tarjeta-marca">
+                                        <div class="imagen-marca">
+                                            <img src="" alt="" title="">
+                                        </div>
+                                        <h4 class="titulo-marca"> Poner Marca</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Fin de Nuestras Marcas section -->
+
+                <!-- Tecno, Electro y más section -->
+                <section id="TecnologiaElectronics">
+                    <div class="titulo-seccion"><h2>Tecnología, Electrónica, más</h2></div>
+                    <div id="caja-tecnologia">
+                        <div class="cuerpo-productos">
+                            <h3 class="titulo-destacado">Productos Destacados</h3>
+                            <div class="contenedor-productos">
+                                <div class="lista-productos">
+                                    <!-- Repetir el bloque de marca según sea necesario -->
+                                    <div class="item-producto">
+                                        <div class="tarjeta-producto">
+                                            <div class="imagen-producto">
+                                                <img src="" alt="" title="">
+                                            </div>
+                                            <div class="icono-superior-izquierda">
+                                                <span class="icono"></span>
+                                            </div>
+                                            <div>
+                                            <h4 class="titulo-producto"> Ejemplo de titulo </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fin de repetir el bloque de marca según sea necesario -->
+                                    <div class="item-producto">
+                                        <div class="tarjeta-producto">
+                                            <div class="imagen-producto">
+                                                <img src="" alt="" title="">
+                                            </div>
+                                            <div class="icono-superior-izquierda">
+                                                <span class="icono"></span>
+                                            </div>
+                                            <div>
+                                            <h4 class="titulo-producto"> Ejemplo de titulo </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-producto">
+                                        <div class="tarjeta-producto">
+                                            <div class="imagen-producto">
+                                                <img src="" alt="" title="">
+                                            </div>
+                                            <div class="icono-superior-izquierda">
+                                                <span class="icono"></span>
+                                            </div>
+                                            <div>
+                                            <h4 class="titulo-producto"> Ejemplo de titulo </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-producto">
+                                        <div class="tarjeta-producto">
+                                            <div class="imagen-producto">
+                                                <img src="" alt="" title="">
+                                            </div>
+                                            <div class="icono-superior-izquierda">
+                                                <span class="icono"></span>
+                                            </div>
+                                            <div>
+                                            <h4 class="titulo-producto"> Ejemplo de titulo </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-producto">
+                                        <div class="tarjeta-producto">
+                                            <div class="imagen-producto">
+                                                <img src="" alt="" title="">
+                                            </div>
+                                            <div class="icono-superior-izquierda">
+                                                <span class="icono"></span>
+                                            </div>
+                                            <div>
+                                            <h4 class="titulo-producto"> Ejemplo de titulo </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Fin de Tecno, Electro y más section -->
+
+                <!-- Sobre Nosotros section -->
+                <section id="SobreNosotros">
+                    <div class="titulo-seccion"><h2>Sobre Nosotros</h2></div>
+                    <div id="contenedor-sobre-nosotros">
+                        <div class="titulo-sobre">
+                            <div class="base">
+                                <h3><span><p>Quienes Somos</p></span></h3>
+                            </div>
+                        </div>
+                        <div class="mensaje-sobre">
+                            <div class="contenido-sobre">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Fin de Sobre Nosotros section -->
             </div>
-        </section>
-        <!-- Fin de Productos section -->
-
-        <!-- Nuestras Marcas section -->
-        <section id="Nuestras Marcas">
-            <h2>Nuestras Marcas</h2>
-            <p></p>
-        </section>
-        <!-- Fin de Nuestras Marcas section -->
-
-        <!-- Tecno, Electro y más section -->
-        <section id="Tecnología, Electrónica, más">
-            <h2>Tecnología, Electrónica, más</h2>
-            <p></p>
-        </section>
-        <!-- Fin de Tecno, Electro y más section -->
-
-        <!-- Sobre Nosotros section -->
-        <section id="Sobre Nosotros">
-            <h2>Sobre Nosotros</h2>
-            <p></p>
-        </section>
-        <!-- Fin de Sobre Nosotros section -->
-
-        </div>
-        <!-- Fin del contenedor -->
-        </div>
-        <!-- Fin del cabezal -->
+            <!-- Fin del contenedor -->
         </header>
     <!-- Fin del Contenido principal -->
 
