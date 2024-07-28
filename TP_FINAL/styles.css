@@ -213,6 +213,7 @@ section {
     color: #333; 
 }
 
+/* Quienes somos */
 .mensaje-sobre {
     width: 100%;
 }
@@ -253,6 +254,7 @@ section {
     color: #333;
 }
 
+/* Cuestionario para suscripción */
 .cuestionario {
     display: flex;
     flex-direction: column;
@@ -322,10 +324,13 @@ footer :hover {
     /* Ajustar el padding y la orientación del menú de navegación */
     nav {
         flex-direction: column;
+        align-items: center;
     }
 
     nav a {
         padding: 20px 10px;
+        width: 100%; /* Hacer que los enlaces ocupen el ancho completo */
+        text-align: center;
     }
 
     /* Ajustar el diseño de las secciones */
@@ -341,6 +346,37 @@ footer :hover {
     }
 
     .lista-productos {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar los productos */
         margin: 0 auto;
     }
+
+    .item-producto {
+        width: 90%; /* Hacer que los productos ocupen el 90% del contenedor */
+        margin-bottom: 20px; /* Espaciado entre productos */
+    }
+
+    /* Ajustar el formulario de suscripción */
+    #contenedor-q {
+        padding: 20px;
+        max-width: 90%; /* Aumentar el ancho máximo */
+    }
+
+    .mensaje-q p {
+        font-size: 1.2em; /* Ajustar el tamaño de fuente */
+    }
+
+    /* Ajustar el formulario de suscripción */
+    .cuestionario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos dentro del formulario */
+}
+
+    .button-q {
+    width: 100%; /* Hacer que el botón ocupe el ancho completo */
+    max-width: 200px; /* Opcional: establecer un ancho máximo para el botón */
+    margin-top: 10px; /* Espaciado superior */
+}
+
 }
