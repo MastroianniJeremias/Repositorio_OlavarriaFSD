@@ -3,8 +3,8 @@
     --color2: rgb(255, 145, 76);
 }
 * { 
-    /* margin: 0%;
-    padding: 0%; */
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
@@ -122,6 +122,7 @@ button {
     cursor: pointer;
 }
 
+ /* no funca este: */
 #bottom-button {
     padding: 10px;
     color: rgb(31, 30, 30);
@@ -136,6 +137,7 @@ button {
     padding-right: 10px;
 }
 
+ /* no funca este: */
 .button-hover :hover {
     background-color: var(--color2);
 }
@@ -194,7 +196,6 @@ section {
     box-shadow: 0 2px 7px #dfdfdf;
     margin: 50px auto;
     background: #fafafa;
-
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -253,11 +254,6 @@ section {
     border-top: 1px solid #eee;
     padding-top: 20px;
 }
-
-/* .product-bottom div {
-    float: left;
-    width: 50%;
-} */
 
 .precio-producto {
     font-size: 18px;
@@ -388,7 +384,7 @@ footer :hover {
         width: 150px;
     }
 
-    /* Ajustar el padding y la orientación del menú de navegación */
+    
     nav {
         flex-direction: column;
         align-items: center;
@@ -396,9 +392,20 @@ footer :hover {
 
     nav a {
         padding: 20px 10px;
-        width: 100%; /* Hacer que los enlaces ocupen el ancho completo */
+        width: 100%;
         text-align: center;
     }
+
+    #alert-compras {
+        width: 80%; 
+        height: auto;
+    }
+
+    /* Sigue sin funcar el boton este: */
+    /* .bottom-button {
+        width: 40%;
+        height: auto;
+    } */
 
     /* Ajustar el diseño de las secciones */
     section {
@@ -413,37 +420,42 @@ footer :hover {
     }
 
     .lista-productos {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        align-items: center; /* Centrar los productos */
+        flex-direction: column;
+        align-items: center;
         margin: 0 auto;
     }
 
     .item-producto {
-        width: 90%; /* Hacer que los productos ocupen el 90% del contenedor */
-        margin-bottom: 20px; /* Espaciado entre productos */
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .tarjeta-producto {
+        height: auto; 
+        padding: 20px;
     }
 
     /* Ajustar el formulario de suscripción */
     #contenedor-q {
         padding: 20px;
-        max-width: 90%; /* Aumentar el ancho máximo */
+        max-width: 90%; 
     }
 
     .mensaje-q p {
-        font-size: 1.2em; /* Ajustar el tamaño de fuente */
+        font-size: 1.2em;
     }
 
     /* Ajustar el formulario de suscripción */
     .cuestionario {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar los elementos dentro del formulario */
+    align-items: center;
 }
 
     .button-q {
-    width: 100%; /* Hacer que el botón ocupe el ancho completo */
-    max-width: 200px; /* Opcional: establecer un ancho máximo para el botón */
-    margin-top: 10px; /* Espaciado superior */
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
 }
 
 }
