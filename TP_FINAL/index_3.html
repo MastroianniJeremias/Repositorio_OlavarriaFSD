@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fénix Supermercado</title>
+    <meta
+      name="description"
+      content="El supermercado Fénix ofrece una experiencia de compra excepcional con productos frescos, precios competitivos y un servicio al cliente impecable. ¡Descubre la calidad y conveniencia que Fénix tiene para ti!"
+    />
+    <meta
+      name="keywords"
+      content="programación, desarrollo web, tienda, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Jeremias Nehuen Mastroianni and Bruno Mensi" />
+
+    <!-- Enlace css-->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fin del Enlace  -->
+
+    <!-- Logo  -->
+    <link rel="icon" href="Img/logo.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <!--Fin del Logo  -->
+
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fin de Google Fonts link -->
+  </head>
+  <body>
+    <div id="encabezado">
+      <!-- Logo principal -->
+      <div class="logo" id="logo-principal">
+        <img
+          src="Img/logo_grande.jpg"
+          alt="Logo Fénix Supermercado"
+          title="Fénix Supermercado"
+        />
+      </div>
+      <!-- Fin de logo principal -->
+      <!-- Logo secundario -->
+      <div id="superior-extrema-izquierda">
+        <i class="fi fi-rr-cart-shopping-fast"></i>
+      </div>
+      <!-- Fin de logo secundario -->
+    </div>
+    <div id="alert-compras" class="hidden"></div>
+    <!-- Menú de la página -->
+    <button class="boton-menu"></button>
+    <div class="fondo"></div>
+    <div class="menu"></div>
+    <nav>
+      <a
+        href="index.html"
+        class="enlace-nav"
+        style="animation-delay: 0.2s"
+        title="Home"
+        >Inicio</a
+      >
+      <a
+        href="index_2.html"
+        class="enlace-nav"
+        style="animation-delay: 0.3s"
+        title="Productos"
+        >Productos</a
+      >
+      <a
+        href="index.html"
+        class="enlace-nav"
+        style="animation-delay: 0.4s"
+        title="Nuestras Marcas"
+        >Nuestras Marcas</a
+      >
+      <a
+        href="index_2.html"
+        class="enlace-nav"
+        style="animation-delay: 0.5s"
+        title="Tecnología, Electrónica, más"
+        >Tecno, Electro y más...</a
+      >
+      <a
+        href="index.html"
+        class="enlace-nav"
+        style="animation-delay: 0.6s"
+        title="Sobre Nosotros"
+        >Sobre Nosotros</a
+      >
+      <a
+        href="#ÚneteaFénix"
+        class="enlace-nav"
+        style="animation-delay: 0.6s"
+        title="Únete a Fénix"
+        >Únete a Fénix</a
+      >
+    </nav>
+    <!-- Fin del Menú de la página -->
+
+    <!-- Contenido principal -->
+    <header>
+      <!-- Contenedor -->
+      <div id="contenedor-principal">
+        <!-- Cuestionario para suscripción -->
+        <div id="contenedor-q">
+          <div>
+            <div class="mensaje-q">
+              <p>Subscríbete para recibir ofertas</p>
+            </div>
+            <div class="cuestionario">
+              <form action="">
+                <label for="nombre">Nombre:</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Nombre"
+                  autocomplete="name"
+                  required
+                />
+
+                <label for="apellido">Apellido:</label>
+                <input
+                  type="text"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Apellido"
+                  autocomplete="on"
+                  required
+                />
+
+                <label for="teléfono">Teléfono:</label>
+                <input
+                  type="tel"
+                  id="teléfono"
+                  name="teléfono"
+                  placeholder="Teléfono"
+                  autocomplete="on"
+                  required
+                />
+
+                <label for="email">Correo Electrónico:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Correo Electrónico"
+                  autocomplete="email"
+                  required
+                />
+
+                <label class="label-consulta" for="consulta">Consulta:</label>
+                <textarea class="textarea-consulta "
+                  id="consulta"
+                  name="consulta"
+                  placeholder="Ingrese su consulta aquí..."
+                  required
+                ></textarea>
+
+                <button type="submit" class="button-q">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Fin cuestionario para suscripción -->
+      </div>
+      <!-- Fin del contenedor -->
+    </header>
+    <!-- Fin del Contenido principal -->
+    <!-- Enlace js-->
+    <script src="scripts.js"></script>
+    <!-- Fin de Enlace  -->
+
+    <!-- Footer  -->
+    <footer>
+      <p>
+        &copy; 2024 Mastroianni Jeremias & Bruno Mensi. Todos los derechos
+        reservados.
+      </p>
+    </footer>
+    <!-- Fin de Footer  -->
+  </body>
+</html>
