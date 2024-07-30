@@ -19,7 +19,7 @@ body {
 
 #encabezado {
     top: 0;
-    width: 99.5%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -123,10 +123,9 @@ button {
     cursor: pointer;
 }
 
- /* no funca este: */
 #bottom-button {
     padding: 10px;
-    color: rgb(31, 30, 30);
+    color: rgb(17, 15, 15);
     border: none;
     border-radius: 5px;
     font-size: 1em;
@@ -138,16 +137,18 @@ button {
     padding-right: 10px;
 }
 
- /* no funca este: */
+.button-hover {
+    width: 230px;
+    font-size: auto;
+    background-color: var(--color1);
+    border: none;
+}
+
 .button-hover :hover {
     background-color: var(--color2);
 }
 
 /* Estilo de los títulos principales */
-h2 {
-    margin-bottom: 10px; 
-}
-
 h3 {
     align-content: center;
 }
@@ -307,6 +308,7 @@ section {
 
 .contenido-sobre p {
     font-size: 19px;
+    text-align: left;
 }
 
 #contenedor-q {
