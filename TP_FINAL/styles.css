@@ -397,17 +397,14 @@ input[type="email"]:focus input[type="tel"]:focus {
 }
 
 /* Aside + ads */
-.ads-left 
-.ads-right {
-    display: block;
+.ads-left .ads-right {
+  display: block;
 }
 
 .ads-left {
-    
 }
 
 .ads-right {
-    
 }
 
 /* Pie de página */
