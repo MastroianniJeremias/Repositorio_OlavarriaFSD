@@ -329,6 +329,28 @@ section {
   color: #333;
 }
 
+.Datos-contacto {
+  text-decoration: none;
+}
+
+.link-Datos {
+  text-decoration: none;
+  color: var(--color1);
+}
+
+.link-Datos :visited { 
+  color: var(--color1);
+}
+
+.link-Datos :hover {
+  transition: 0.2s;
+  color: black;
+}
+
+.link-Datos :active {
+  color: var(--color2);
+}
+
 /* Cuestionario para suscripción */
 .cuestionario {
   display: flex;
@@ -473,6 +495,7 @@ footer :hover {
 
   .lista-productos {
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
   }
