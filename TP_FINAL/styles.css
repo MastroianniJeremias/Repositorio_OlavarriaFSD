@@ -178,8 +178,8 @@ section {
 .cuerpo-productos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  align-items: start;
+  gap: 8px;
   padding: 10px;
   overflow-x: scroll;
 }
@@ -225,7 +225,7 @@ section {
 }
 
 .item-details {
-  padding: 30px;
+  padding: auto;
 }
 
 .categoria-producto {
@@ -234,23 +234,22 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   color: #ccc;
-  margin-bottom: 18px;
+  margin: auto;
 }
 
 .categoria-producto h4 :hover {
   font-weight: 500;
   display: block;
-  margin-bottom: 18px;
+  margin: auto;
   text-transform: uppercase;
   color: #363636;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .categoria-producto p {
   font-size: 15px;
-  line-height: 22px;
-  margin-bottom: 18px;
+  line-height: auto;
+  padding-top: auto;
   color: #999;
 }
 
@@ -279,6 +278,12 @@ section {
   margin-top: 10px;
   font-size: 1.2em;
   color: #333;
+}
+
+.btn-p {
+  height: auto;
+  width: auto;
+  font-size: 80%;
 }
 
 /* Quienes somos */

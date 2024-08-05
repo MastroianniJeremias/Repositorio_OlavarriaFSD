@@ -1,294 +1,331 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fénix Supermercado</title>
-    <meta
-      name="description"
-      content="El supermercado Fénix ofrece una experiencia de compra excepcional con productos frescos, precios competitivos y un servicio al cliente impecable. ¡Descubre la calidad y conveniencia que Fénix tiene para ti!"
-    />
-    <meta
-      name="keywords"
-      content="programación, desarrollo web, tienda, HTML, CSS, JavaScript"
-    />
-    <meta name="author" content="Jeremias Nehuen Mastroianni and Bruno Mensi" />
 
-    <!-- Enlace css-->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Fin del Enlace  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fénix Supermercado</title>
+  <meta name="description"
+    content="El supermercado Fénix ofrece una experiencia de compra excepcional con productos frescos, precios competitivos y un servicio al cliente impecable. ¡Descubre la calidad y conveniencia que Fénix tiene para ti!" />
+  <meta name="keywords" content="programación, desarrollo web, tienda, HTML, CSS, JavaScript" />
+  <meta name="author" content="Jeremias Nehuen Mastroianni and Bruno Mensi" />
 
-    <!-- Logo  -->
-    <link rel="icon" href="Img/logo.ico" />
+  <!-- Enlace css-->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Fin del Enlace  -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
-    />
-    <!--Fin del Logo  -->
+  <!-- Logo  -->
+  <link rel="icon" href="Img/logo.ico" />
 
-    <!-- Google Fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Fin de Google Fonts link -->
-  </head>
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <!--Fin del Logo  -->
 
-  <body>
-    <div id="encabezado">
-      <!-- Logo principal -->
-      <div class="logo" id="logo-principal">
-        <img
-          src="Img/logo_grande.jpg"
-          alt="Logo Fénix Supermercado"
-          title="Fénix Supermercado"
-        />
-      </div>
-      <!-- Fin de logo principal -->
-      <!-- Logo secundario -->
-      <div id="superior-extrema-izquierda">
-        <i class="fi fi-rr-cart-shopping-fast"></i>
-      </div>
-      <!-- Fin de logo secundario -->
+  <!-- Google Fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Fin de Google Fonts link -->
+</head>
+
+<body>
+  <div id="encabezado">
+    <!-- Logo principal -->
+    <div class="logo" id="logo-principal">
+      <img src="Img/logo_grande.jpg" alt="Logo Fénix Supermercado" title="Fénix Supermercado" />
     </div>
-    <div id="alert-compras" class="hidden"></div>
-    <!-- Menú de la página -->
-    <button class="boton-menu"></button>
-    <div class="fondo"></div>
-    <div class="menu"></div>
-    <nav>
-      <a
-        href="index.html"
-        class="enlace-nav"
-        style="animation-delay: 0.2s"
-        title="Home"
-        >Inicio</a
-      >
-      <a
-        href="#Productos"
-        class="enlace-nav"
-        style="animation-delay: 0.3s"
-        title="Productos"
-        >Productos</a
-      >
-      <a
-        href="index.html"
-        class="enlace-nav"
-        style="animation-delay: 0.4s"
-        title="Nuestras Marcas"
-        >Nuestras Marcas</a
-      >
-      <a
-        href="#TecnologiaElectronics"
-        class="enlace-nav"
-        style="animation-delay: 0.5s"
-        title="Tecnología, Electrónica, más"
-        >Tecno, Electro y más...</a
-      >
-      <a
-        href="index.html"
-        class="enlace-nav"
-        style="animation-delay: 0.6s"
-        title="Sobre Nosotros"
-        >Sobre Nosotros</a
-      >
-      <a
-        href="index_3.html"
-        class="enlace-nav"
-        style="animation-delay: 0.6s"
-        title="Únete a Fénix"
-        >Únete a Fénix</a
-      >
-    </nav>
-    <!-- Fin del Menú de la página -->
+    <!-- Fin de logo principal -->
+    <!-- Logo secundario -->
+    <div id="superior-extrema-izquierda">
+      <i class="fi fi-rr-cart-shopping-fast"></i>
+    </div>
+    <!-- Fin de logo secundario -->
+  </div>
+  <div id="alert-compras" class="hidden"></div>
+  <!-- Menú de la página -->
+  <button class="boton-menu"></button>
+  <div class="fondo"></div>
+  <div class="menu"></div>
+  <nav>
+    <a href="index.html" class="enlace-nav" style="animation-delay: 0.2s" title="Home">Inicio</a>
+    <a href="#Productos" class="enlace-nav" style="animation-delay: 0.3s" title="Productos">Productos</a>
+    <a href="index.html" class="enlace-nav" style="animation-delay: 0.4s" title="Nuestras Marcas">Nuestras Marcas</a>
+    <a href="#TecnologiaElectronics" class="enlace-nav" style="animation-delay: 0.5s"
+      title="Tecnología, Electrónica, más">Tecno, Electro y más...</a>
+    <a href="index.html" class="enlace-nav" style="animation-delay: 0.6s" title="Sobre Nosotros">Sobre Nosotros</a>
+    <a href="index_3.html" class="enlace-nav" style="animation-delay: 0.6s" title="Únete a Fénix">Únete a Fénix</a>
+  </nav>
+  <!-- Fin del Menú de la página -->
 
-    <!-- Contenido principal -->
-    <header>
-      <!-- Contenedor -->
-      <div id="contenedor-principal">
-        <!-- Productos section -->
-        <section id="Productos">
-          <div class="titulo-seccion"><h2>Productos</h2></div>
-          <div id="caja-productos">
-            <div>
-              <h3 class="titulo-destacado">
-                ¡Mirá todas las Ofertas Exclusivas!
-              </h3>
-            </div>
-            <div class="cuerpo-productos">
-              <div id="productos-destacados" class="contenedor-productos">
-                <div class="lista-productos">
-                  <!-- Repetir este bloque para cada producto -->
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/mercaderia11.jpg" alt="Morcilla Criolla" title="Morcilla Criolla Sin TACC 400 Gr." />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Carnes</span>
-                        <h4 class="titulo-producto">Morcilla Criolla</h4>
-                        <p>Sin TACC 400 Gr.</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$2.700</small> $1.590
-                          </div>
+  <!-- Contenido principal -->
+  <header>
+    <!-- Contenedor -->
+    <div id="contenedor-principal">
+      <!-- Productos section -->
+      <section id="Productos">
+        <div class="titulo-seccion">
+          <h2>Productos</h2>
+        </div>
+        <div id="caja-productos">
+          <div>
+            <h3 class="titulo-destacado">
+              ¡Mirá todas las Ofertas Exclusivas!
+            </h3>
+          </div>
+          <div class="cuerpo-productos">
+            <div id="productos-destacados" class="contenedor-productos">
+              <div class="lista-productos">
+                <!-- Repetir este bloque para cada producto -->
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/mercaderia11.jpg" alt="Morcilla Criolla"
+                        title="Morcilla Criolla Sin TACC 400 Gr." />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Carnes</span>
+                      <h4 class="titulo-producto">Morcilla Criolla</h4>
+                      <p>Sin TACC 400 Gr.</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$2.700</small> $1.590
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para alimentos -->
+                          <select id="selectProductos">
+                            <!-- Opciones generadas por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <!-- Fin de repeitr el bloque de marca según sea necesario -->
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/mercaderia12.jpg" alt="Yogur Entero Bebible Milkaut Vainilla 0% Lactosa 1 Kg." title="Yogur Entero Bebible Milkaut Vainilla 0% Lactosa 1 Kg." />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Bebidas</span>
-                        <h4 class="titulo-producto">Yogur Entero Milkaut Vainilla</h4>
-                        <p>0% Lactosa 1 Kg.</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$2.365</small> $1.880
-                          </div>
+                </div>
+                <!-- Fin de repeitr el bloque de marca según sea necesario -->
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/mercaderia12.jpg" alt="Yogur Entero Bebible Milkaut Vainilla 0% Lactosa 1Kg."
+                        title="Yogur Entero Bebible Milkaut Vainilla 0% Lactosa 1Kg." />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Bebidas</span>
+                      <h4 class="titulo-producto">Yogur Entero Milkaut Vainilla</h4>
+                      <p>0% Lactosa 1Kg.</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$2.365</small> $1.880
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para alimentos -->
+                          <select id="selectProductos">
+                            <!-- Opciones generadas por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/mercaderia10.jpg" alt="Queso Tybo Feteado Gran Aldea 180 Gr." title="Queso Tybo Feteado Gran Aldea 180 Gr." />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Almacen</span>
-                        <h4 class="titulo-producto">Queso Tybo Feteado</h4>
-                        <p>Gran Aldea 180 Gr.</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$3.200</small> $2.490
-                          </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/mercaderia10.jpg" alt="Queso Tybo Feteado Gran Aldea 180 Gr."
+                        title="Queso Tybo Feteado Gran Aldea 180 Gr." />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Almacen</span>
+                      <h4 class="titulo-producto">Queso Tybo Feteado</h4>
+                      <p>Gran Aldea 180 Gr.</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$3.200</small> $2.490
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para alimentos -->
+                          <select id="selectProductos">
+                            <!-- Opciones generadas por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/mercaderia3.jpg" alt="Salchichas X 12 Ud Vienissima 460 Gr." title="Salchichas X 12 Ud Vienissima 460 Gr." />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Almacen</span>
-                        <h4 class="titulo-producto">Salchichas Vienissima</h4>
-                        <p>X12 Uds. 460 Gr.</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$1.550</small> $1.150
-                          </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/mercaderia3.jpg" alt="Salchichas X 12 Ud Vienissima 460 Gr."
+                        title="Salchichas X 12 Ud Vienissima 460 Gr." />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Almacen</span>
+                      <h4 class="titulo-producto">Salchichas Vienissima</h4>
+                      <p>X12 Uds. 460 Gr.</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$1.550</small> $1.150
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para alimentos -->
+                          <select id="selectProductos">
+                            <!-- Opciones generadas por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/mercaderia4.jpg" alt="Postre Vainilla Con Rocklets Serenito 120 Gr." title="Postre Vainilla Con Rocklets Serenito 120 Gr." />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Almacen</span>
-                        <h4 class="titulo-producto">Postre Vainilla Con Rocklets Serenito</h4>
-                        <p>120 Gr.</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$1.469</small> $1.015
-                          </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/mercaderia4.jpg" alt="Postre Vainilla Con Rocklets Serenito 120 Gr."
+                        title="Postre Vainilla Con Rocklets Serenito 120 Gr." />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Almacen</span>
+                      <h4 class="titulo-producto">Postre Vainilla Con Rocklets Serenito</h4>
+                      <p>120 Gr.</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$1.469</small> $1.015
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para alimentos -->
+                          <select id="selectProductos">
+                            <!-- Opciones generadas por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/mercaderia5.jpg" alt="Radicheta en Bandeja Sueño Verde 100 Gr." title="Radicheta en Bandeja Sueño Verde 100 Gr." />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Verduras</span>
-                        <h4 class="titulo-producto">Radicheta en Bandeja</h4>
-                        <p>Sueño Verde 100 Gr.</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$2.000</small> $1.390
-                          </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/mercaderia5.jpg" alt="Radicheta en Bandeja Sueño Verde 100 Gr."
+                        title="Radicheta en Bandeja Sueño Verde 100 Gr." />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Verduras</span>
+                      <h4 class="titulo-producto">Radicheta en Bandeja</h4>
+                      <p>Sueño Verde 100 Gr.</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$2.000</small> $1.390
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para alimentos -->
+                          <select id="selectProductos">
+                            <!-- Opciones generadas por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/mercaderia6.jpg" alt="Galletitas Oreo Rellenas Con Crema Sabor Original 354 Gr." title="Galletitas Oreo Rellenas Con Crema Sabor Original 354 Gr." />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Galletitas y dulces</span>
-                        <h4 class="titulo-producto">Galletitas Oreo Rellenas Con Crema</h4>
-                        <p>Sabor Original 354 Gr</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$4.400</small> $3.700
-                          </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/mercaderia6.jpg" alt="Galletitas Oreo Rellenas Con Crema Sabor Original 354Gr."
+                        title="Galletitas Oreo Rellenas Con Crema Sabor Original 354Gr." />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Galletitas y dulces</span>
+                      <h4 class="titulo-producto">Galletitas Oreo Rellenas Con Crema</h4>
+                      <p>Sabor Original 354Gr</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$4.400</small> $3.700
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para alimentos -->
+                          <select id="selectProductos">
+                            <!-- Opciones generadas por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/mercaderia7.jpg" alt="Leche Descremada La Serenísima Protein 1 Lt." title="Leche Descremada La Serenísima Protein 1 Lt." />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Almacen</span>
-                        <h4 class="titulo-producto">Leche Descremada</h4>
-                        <p>La Serenísima Protein 1 Lt.</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$1.899</small> $1.475
-                          </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/mercaderia7.jpg" alt="Leche Descremada La Serenísima Protein 1 Lt."
+                        title="Leche Descremada La Serenísima Protein 1 Lt." />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Almacen</span>
+                      <h4 class="titulo-producto">Leche Descremada</h4>
+                      <p>La Serenísima Protein 1 Lt.</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$1.899</small> $1.475
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para alimentos -->
+                          <select id="selectProductos">
+                            <!-- Opciones generadas por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/mercaderia8.jpg" alt="Queso Crema Clásico Casancrem 290 Gr." title="Queso Crema Clásico Casancrem 290 Gr." />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Almacen</span>
-                        <h4 class="titulo-producto">Queso Crema</h4>
-                        <p>Clásico Casancrem 290 Gr.</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$4.500</small> $3.700
-                        </div>
-                      </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/mercaderia8.jpg" alt="Queso Crema Clásico Casancrem 290 Gr."
+                        title="Queso Crema Clásico Casancrem 290 Gr." />
                     </div>
-                  </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/mercaderia9.jpg" alt="Cebolla Elegida Premium x 1 Kg." title="Cebolla Elegida Premium x 1 Kg. $1.690" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Verduras</span>
-                        <h4 class="titulo-producto">Cebolla</h4>
-                        <p>Elegida Premium x 1 Kg.</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$2.235</small> $1.690
-                          </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Almacen</span>
+                      <h4 class="titulo-producto">Queso Crema</h4>
+                      <p>Clásico Casancrem 290 Gr.</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$4.500</small> $3.700
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para alimentos -->
+                          <select id="selectProductos">
+                            <!-- Opciones generadas por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -297,217 +334,328 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- Fin de Productos section -->
+      </section>
+      <!-- Fin de Productos section -->
 
-        <!-- Tecno, Electro y más section -->
-        <section id="TecnologiaElectronics">
-          <div class="titulo-seccion">
-            <h2>Tecnología, Electrónica, más</h2>
+      <!-- Tecno, Electro y más section -->
+      <section id="TecnologiaElectronics">
+        <div class="titulo-seccion">
+          <h2>Tecnología, Electrónica, más</h2>
+        </div>
+        <div id="caja-tecnologia">
+          <div>
+            <h3 class="titulo-destacado">Productos Destacados</h3>
           </div>
-          <div id="caja-tecnologia">
-            <div>
-              <h3 class="titulo-destacado">Productos Destacados</h3>
-            </div>
-            <div class="cuerpo-productos">
-              <div class="contenedor-productos">
-                <div class="lista-productos">
-                  <!-- Repetir el bloque de marca según sea necesario -->
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/productos1.jpg" alt="Auriculares JBL BT Wave Flex Negro" title="Auriculares JBL BT Wave Flex Negro" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Tecnología</span>
-                        <h4 class="titulo-producto">Auriculares JBL</h4>
-                        <p>BT Wave Flex Negro</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$169.500</small> $120.000
-                          </div>
+          <div class="cuerpo-productos" class="cuerpo-tecnologia">
+            <div id="productos-tecnologia" class="contenedor-productos">
+              <div class="lista-productos">
+                <!-- Repetir el bloque de marca según sea necesario -->
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/productos1.jpg" alt="Auriculares JBL BT Wave Flex Negro"
+                        title="Auriculares JBL BT Wave Flex Negro" />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Tecnología</span>
+                      <h4 class="titulo-producto">Auriculares JBL</h4>
+                      <p>BT Wave Flex Negro</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$169.500</small> $120.000
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para tecnología -->
+                          <select id="selectProductosTecnologia">
+                            <!-- Opciones generadas dinámicamente por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <!-- Fin de repetir el bloque de marca según sea necesario -->
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/productos2.jpg" alt="Cortadora de Césped Black & Decker 1200W 32 cm" title="Cortadora de Césped Black & Decker 1200W 32 cm" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Electrodomésticos</span>
-                        <h4 class="titulo-producto">Cortadora de Césped Black & Decker</h4>
-                        <p>1200W 32 cm</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$255.000</small> $220.000
-                          </div>
+                </div>
+                <!-- Fin de repetir el bloque de marca según sea necesario -->
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/productos2.jpg" alt="Cortadora de Césped Black & Decker 1200W 32 cm"
+                        title="Cortadora de Césped Black & Decker 1200W 32 cm" />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Electrodomésticos</span>
+                      <h4 class="titulo-producto">Cortadora de Césped Black & Decker</h4>
+                      <p>1200W 32 cm</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$255.000</small> $220.000
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para tecnología -->
+                          <select id="selectProductosTecnologia">
+                            <!-- Opciones generadas dinámicamente por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/productos3.jpg" alt="Termotanque a Gas Escorial 80 Lts" title="ermotanque a Gas Escorial 80 Lts" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Electrodomésticos</span>
-                        <h4 class="titulo-producto">Termotanque Escorial</h4>
-                        <p>a Gas de 80 Lts</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small> $279.999</small>  $249.999
-                          </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/productos3.jpg" alt="Termotanque a Gas Escorial 80 Lts"
+                        title="ermotanque a Gas Escorial 80 Lts" />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Electrodomésticos</span>
+                      <h4 class="titulo-producto">Termotanque Escorial</h4>
+                      <p>a Gas de 80 Lts</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small> $279.999</small> $249.999
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para tecnología -->
+                          <select id="selectProductosTecnologia">
+                            <!-- Opciones generadas dinámicamente por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/productos4.jpg" alt="Celular Motorola Moto G84 5G 256GB Viva Magenta" title="Celular Motorola Moto G84 5G 256GB Viva Magenta" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Tecnología</span>
-                        <h4 class="titulo-producto">Celular Motorola</h4>
-                        <p>Moto G84 5G 256GB Viva Magenta</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$799.999</small> $569.999
-                          </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/productos4.jpg" alt="Celular Motorola Moto G84 5G 256GB Viva Magenta"
+                        title="Celular Motorola Moto G84 5G 256GB Viva Magenta" />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Tecnología</span>
+                      <h4 class="titulo-producto">Celular Motorola</h4>
+                      <p>Moto G84 5G 256GB Viva Magenta</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$799.999</small> $569.999
                         </div>
+                        <form>
+                          <!-- Select para tecnología -->
+                          <select id="selectProductosTecnologia">
+                            <!-- Opciones generadas dinámicamente por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/productos5.jpg" alt="Celular Samsung Galaxy A05 64GB Gris" title="Celular Samsung Galaxy A05 64GB Gris" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Tecnología</span>
-                        <h4 class="titulo-producto">Celular Samsung Galaxy A05</h4>
-                        <p>64GB Gris</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$465.000</small> $285.000
-                          </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/productos5.jpg" alt="Celular Samsung Galaxy A05 64GB Gris"
+                        title="Celular Samsung Galaxy A05 64GB Gris" />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Tecnología</span>
+                      <h4 class="titulo-producto">Celular Samsung Galaxy A05</h4>
+                      <p>64GB Gris</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$465.000</small> $285.000
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para tecnología -->
+                          <select id="selectProductosTecnologia">
+                            <!-- Opciones generadas dinámicamente por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/productos6.jpg" alt="´Notebook Lenovo 14´ Celeron 4GB 128GB eMMC W11 82V60027AR" title="´Notebook Lenovo 14´ Celeron 4GB 128GB eMMC W11 82V60027AR" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Tecnología</span>
-                        <h4 class="titulo-producto">Notebook Lenovo 14</h4>
-                        <p>Celeron 4GB 128GB eMMC W11 82V60027AR</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$900.760</small> $504.800
-                          </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/productos6.jpg" alt="´Notebook Lenovo 14´ Celeron 4GB 128GB eMMC W11 82V60027AR"
+                        title="´Notebook Lenovo 14´ Celeron 4GB 128GB eMMC W11 82V60027AR" />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Tecnología</span>
+                      <h4 class="titulo-producto">Notebook Lenovo 14</h4>
+                      <p>Celeron 4GB 128GB eMMC W11</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$900.760</small> $504.800
                         </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para tecnología -->
+                          <select id="selectProductosTecnologia">
+                            <!-- Opciones generadas dinámicamente por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
                       </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/productos7.jpg" alt="Heladera Gafa 282 Lts HGF358 AFB Blanca" title="Heladera Gafa 282 Lts HGF358 AFB Blanca" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Electrodomésticos/span>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/productos7.jpg" alt="Heladera Gafa 282 Lts HGF358 AFB Blanca"
+                        title="Heladera Gafa 282 Lts HGF358 AFB Blanca" />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Electrodomésticos</span>
                         <h4 class="titulo-producto">Heladera Gafa</h4>
                         <p>282 Lts HGF358 AFB Blanca</p>
                         <div class="producto-bottom">
                           <div class="precio-producto">
                             <small>$840.000</small> $660.000
                           </div>
+                          <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                          <form>
+                            <!-- Select para tecnología -->
+                            <select id="selectProductosTecnologia">
+                              <!-- Opciones generadas dinámicamente por JavaScript -->
+                            </select>
+                            <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                            <!-- Botón para agregar al carrito -->
+                            <button class="btn-p" type="submit">Agregar al carrito</button>
+                          </form>
                         </div>
-                      </div>
                     </div>
                   </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/productos8.jpg" alt="Colchón Espuma 1 plaza 080 x 190 ONE" title="Colchón Espuma 1 plaza 080 x 190 ONE" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Hogar</span>
-                        <h4 class="titulo-producto">Colchón Espuma</h4>
-                        <p>1 plaza 080 x 190 ONE</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$400.000</small> $257.900
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/productos9.jpg" alt="Mate Origen con Bombilla Color Verde" title="Mate Origen con Bombilla Color Verde" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Accesorios</span>
-                        <h4 class="titulo-producto">Mate Origen con Bombilla</h4>
-                        <p>Color Verde</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$57.000</small> $37.000
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item-producto">
-                    <div class="tarjeta-producto">
-                      <div class="imagen-producto">
-                        <img src="Img/productos10.jpg" alt="Termo Coleman 700ml Acero Inoxidable Celeste" title="Termo Coleman 700ml Acero Inoxidable Celeste" />
-                      </div>
-                      <div class="item-details">
-                        <span class="categoria-producto">Accesorios</span>
-                        <h4 class="titulo-producto">Termo Coleman</h4>
-                        <p>700ml Acero Inoxidable Celeste</p>
-                        <div class="producto-bottom">
-                          <div class="precio-producto">
-                            <small>$96.300</small> $75.300
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Fin de la seccion product-card -->
                 </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/productos8.jpg" alt="Colchón Espuma 1 plaza 080 x 190 ONE"
+                        title="Colchón Espuma 1 plaza 080 x 190 ONE" />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Hogar</span>
+                      <h4 class="titulo-producto">Colchón Espuma</h4>
+                      <p>1 plaza 080 x 190 ONE</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$400.000</small> $257.900
+                        </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para tecnología -->
+                          <select id="selectProductosTecnologia">
+                            <!-- Opciones generadas dinámicamente por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/productos9.jpg" alt="Mate Origen con Bombilla Color Verde"
+                        title="Mate Origen con Bombilla Color Verde" />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Accesorios</span>
+                      <h4 class="titulo-producto">Mate Origen con Bombilla</h4>
+                      <p>Color Verde</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$57.000</small> $37.000
+                        </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para tecnología -->
+                          <select id="selectProductosTecnologia">
+                            <!-- Opciones generadas dinámicamente por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item-producto">
+                  <div class="tarjeta-producto">
+                    <div class="imagen-producto">
+                      <img src="Img/productos10.jpg" alt="Termo Coleman 700ml Acero Inoxidable Celeste"
+                        title="Termo Coleman 700ml Acero Inoxidable Celeste" />
+                    </div>
+                    <div class="item-details">
+                      <span class="categoria-producto">Accesorios</span>
+                      <h4 class="titulo-producto">Termo Coleman</h4>
+                      <p>700ml Acero Inoxidable Celeste</p>
+                      <div class="producto-bottom">
+                        <div class="precio-producto">
+                          <small>$96.300</small> $75.300
+                        </div>
+                        <!-- Formulario para seleccionar el producto y la cantidad a comprar -->
+                        <form>
+                          <!-- Select para tecnología -->
+                          <select id="selectProductosTecnologia">
+                            <!-- Opciones generadas dinámicamente por JavaScript -->
+                          </select>
+                          <input class="producto-cantidad" type="number" id="inpCantCompra" min="0" value="0">
+                          <!-- Botón para agregar al carrito -->
+                          <button class="btn-p" type="submit">Agregar al carrito</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin de la seccion product-card -->
               </div>
             </div>
           </div>
-        </section>
-        <!-- Fin de Tecno, Electro y más section -->
-      </div>
-      <!-- Fin del contenedor -->
-    </header>
-    <!-- Fin del Contenido principal -->
+        </div>
+      </section>
+      <!-- Fin de Tecno, Electro y más section -->
+    </div>
+    <!-- Fin del contenedor -->
+  </header>
+  <!-- Fin del Contenido principal -->
 
-    <!-- Enlace js-->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script src="scripts.js"></script>
-    <!-- Fin de Enlace  -->
+  <!-- Enlace js-->
+  <script src="scripts_compra.js"></script>
+  <script src="scripts_carrito.js"></script>
+  <script src="scripts_contacto.js"></script>
+  <!-- Fin de Enlace  -->
 
-    <!-- Footer  -->
-    <footer>
-      <p>
-        &copy; 2024 Mastroianni Jeremias & Bruno Mensi. Todos los derechos
-        reservados.
-      </p>
-    </footer>
-    <!-- Fin de Footer  -->
-  </body>
+  <!-- Footer  -->
+  <footer>
+    <p>
+      &copy; 2024 Mastroianni Jeremias & Bruno Mensi. Todos los derechos
+      reservados.
+    </p>
+  </footer>
+  <!-- Fin de Footer  -->
+</body>
+
 </html>
